@@ -117,10 +117,9 @@ body {
     border-style: solid; 
   }
   
-  @include media-breakpoint-down(md) {
-    .col-md-8 {
-      display: block;
-    }
+@media(max-width: 992px) {
+  .navbar-expand-lg {
+  background-color: #000000;
   }
   
   .middle_img {
