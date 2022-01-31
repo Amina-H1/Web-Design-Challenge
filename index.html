@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css"/>
+ 
+    <title>Web Visualisation Dashboard (Latitude)</title>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-white" href="index.html"> 
+                <span class="navbar-style navbaractive">Latitude</span></a>
+            </div>
+            <div class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown">Plots<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="maximumtemprature.html">Maximum Temperature</a></li>
+                        <li><a href="humidity.html">Humidity</a></li>
+                        <li><a href="cloudiness.html">Cloudiness</a></li>
+                        <li><a href="windspeed.html">Wind Speed</a></li>
+                    </ul>
+                </li>
+                <li><a href="comparison.html"> Comparison</a></li>
+                <li><a href="data.html"> Data</a></li>           
+            </div>
+        </div>      
+    </nav>
+</div>
+    </nav>
+    <div class="container">
+        <div class="row">
+        <div class="col-sm-12 col-md-8 col-lg-8">
+            <h2 class="text-title">Summary: Latitude vs. X</h2>
+            <hr>
+            <img src="Resources/assets/1-max-temp.png" alt="Latitude vs. Maximum Temperature" class="landing-image"> 
+            <p>
+                The purpose of this project was to analyse how weather changes as you get closer to the equator. 
+                To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
+                <br><br>
+                After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. 
+                Factors we looked at included: temperature, cloudiness, wind speed, and humidity. 
+                This site provides the source data and visualisations created as part of the analysis, 
+                as well as explanations and descriptions of any trends and correlations witnessed.
+            </p>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4">
+            <h2 class="text-title">Visualisations</h2>
+            <hr>
+            <a href="maximumtemprature.html">
+                <img src="Resources/assets/1-max-temp.png" class="images" alt="Latitude vs Temperature">
+            </a>
+            <a href="humidity.html">
+                <img src="Resources/assets/2-humidity.png" class="images" alt="Latitude vs Humidity">
+            </a>
+            <a href="cloudiness.html">
+                <img src="Resources/assets/3-cloudiness.png" class="images" alt="Latitude vs Cloudiness">
+            </a>
+            <a href="windspeed.html">
+                <img src="Resources/assets/4-wind-speed.png" class="images" alt="Latitude vs windspeed">
+            </a>
+        </div>
+    </div>
+</body>
